@@ -35,3 +35,7 @@ h1 {
   padding: 15px;
   vertical-align: middle;
 }
+.error {
+  color: red;
+  display: none;
+}

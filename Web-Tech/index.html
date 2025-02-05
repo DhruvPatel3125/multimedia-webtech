@@ -204,23 +204,23 @@
     <div class="container mt-5">
       <h1 class="text-center">Our<span class="text-primary"> Services</span></h1>
       <hr class="w-25 m-auto"><br><br>
-        <div class="table-responsive" data-aos="fade-up" data-aos-delay="300">
-            <table class="table table-bordered table-hover table-striped text-center shadow-lg">
-                <thead class="bg-primary text-white" data-aos="fade-down" data-aos-delay="500">
-                    <tr class="fs-5">
-                        <th>Service</th>
-                        <th>Category</th>
-                        <th>Description</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
-                <tbody id="serviceTable" class="bg-white">
-                    <!-- Data will be loaded here -->
-                </tbody>
-            </table>
-        </div>
+      <div class="table-responsive" data-aos="fade-up" data-aos-delay="300">
+        <table class="table table-bordered table-hover table-striped text-center shadow-lg">
+          <thead class="bg-primary text-white" data-aos="fade-down" data-aos-delay="500">
+            <tr class="fs-5">
+              <th>Service</th>
+              <th>Category</th>
+              <th>Description</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody id="serviceTable" class="bg-white">
+            <!-- Data will be loaded here -->
+          </tbody>
+        </table>
+      </div>
     </div>
-</section>
+  </section>
 
 
 
@@ -234,7 +234,7 @@
 
       <div class="row">
         <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-          <div class="card" data-aos="zoom-out-up" data-aos-offset="200">
+          <div class="card" data-aos="zoom-out-up" data-aos-offset="300">
             <div class="card-body">
               <img src="pic1.jpeg " class="img-fluid rounded-circle border border-primary p-2">
               <h5 class="card-title">Shree Mohan Kumar</h5>
@@ -245,7 +245,7 @@
 
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-          <div class="card" data-aos="zoom-in-up" data-aos-offset="200">
+          <div class="card" data-aos="zoom-in-up" data-aos-offset="300">
             <div class="card-body">
               <img src="pic2.jpeg " class="img-fluid rounded-circle border border-primary p-2">
               <h5 class="card-title">Mr.Sujal Godavariya</h5>
@@ -257,7 +257,7 @@
         </div>
 
         <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-          <div class="card" data-aos="zoom-out-down" data-aos-offset="200">
+          <div class="card" data-aos="zoom-out-down" data-aos-offset="300">
             <div class="card-body">
               <img src="pic.3.webp " class="img-fluid rounded-circle border border-primary p-2">
               <h5 class="card-title">Mr.Priyank Tailor</h5>
@@ -281,41 +281,50 @@
 
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-up-left" data-aos-offset="200">
-          <form class="row g-3" action="/Web-Tech/sub.html" onsubmit="return validateForm()">
+          <form class="row g-3" id="myForm" action="/Web-Tech/sub.html" method="POST">
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
+              <input type="email" class="form-control" id="inputEmail4" name="email">
+              <small class="error" id="emailError">Please enter a valid email.</small>
             </div>
             <div class="col-md-6">
               <label for="inputPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
+              <input type="password" class="form-control" id="inputPassword4" name="password">
+              <small class="error" id="passwordError">Password must be at least 8 characters.</small>
             </div>
             <div class="col-12">
               <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              <input type="text" class="form-control" id="inputAddress" name="address" placeholder="1234 Main St">
+              <small class="error" id="addressError">Address cannot be empty.</small>
             </div>
             <div class="col-md-6">
               <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity">
+              <input type="text" class="form-control" id="inputCity" name="city">
+              <small class="error" id="cityError">City cannot be empty.</small>
             </div>
             <div class="col-md-4">
               <label for="inputState" class="form-label">State</label>
-              <select id="inputState" class="form-select">
+              <select id="inputState" class="form-select" name="state">
                 <option selected>Choose...</option>
-                <option>...</option>
+                <option>California</option>
+                <option>Texas</option>
+                <option>New York</option>
               </select>
+              <small class="error" id="stateError">Please select a state.</small>
             </div>
             <div class="col-md-2">
               <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
+              <input type="text" class="form-control" id="inputZip" name="zip">
+              <small class="error" id="zipError">Zip code must be 5 digits.</small>
             </div>
             <div class="col-12">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <input class="form-check-input" type="checkbox" id="gridCheck" name="terms">
                 <label class="form-check-label" for="gridCheck">
                   Check me out
                 </label>
               </div>
+              <small class="error" id="termsError">You must agree to the terms.</small>
             </div>
             <div class="col-12">
               <button type="submit" class="btn btn-primary">Sign in</button>
@@ -323,10 +332,9 @@
           </form>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end p-4 " data-aos="fade-up-right">
-          <img src="pic4.webp " class="img-fluid img-thumbnail p-2">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end p-4" data-aos="fade-up-right">
+          <img src="pic4.webp" class="img-fluid img-thumbnail p-2">
         </div>
-
       </div>
     </div>
 
@@ -342,72 +350,37 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script>
     // Form validation function
-    function validateForm() {
-      // Get form values
-      var email = document.getElementById("inputEmail4").value;
-      var password = document.getElementById("inputPassword4").value;
-      var address = document.getElementById("inputAddress").value;
-      var city = document.getElementById("inputCity").value;
-
-      // Email validation
-      var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-      if (!emailPattern.test(email)) {
-        alert("Please enter a valid email address.");
-        return false;
-      }
-
-      // Password validation (at least 8 characters)
-      if (password.length < 8) {
-        alert("Password must be at least 8 characters long.");
-        return false;
-      }
-
-      // Address validation (should not be empty)
-      if (address.trim() === "") {
-        alert("Address cannot be empty.");
-        return false;
-      }
-
-      // City validation (should not be empty)
-      if (city.trim() === "") {
-        alert("City cannot be empty.");
-        return false;
-      }
-
-      // If all validations pass, form submission is allowed
-      return true;
-    }
     document.addEventListener("DOMContentLoaded", function () {
-        fetch("data.xml") // Fetch XML file
-            .then(response => response.text())
-            .then(data => {
-                let parser = new DOMParser();
-                let xml = parser.parseFromString(data, "application/xml");
-                let services = xml.getElementsByTagName("service");
-                let tableBody = document.getElementById("serviceTable");
+      fetch("data.xml") // Fetch XML file
+        .then(response => response.text())
+        .then(data => {
+          let parser = new DOMParser();
+          let xml = parser.parseFromString(data, "application/xml");
+          let services = xml.getElementsByTagName("service");
+          let tableBody = document.getElementById("serviceTable");
 
-                for (let i = 0; i < services.length; i++) {
-                    let name = services[i].getElementsByTagName("name")[0].textContent;
-                    let category = services[i].getElementsByTagName("category")[0].textContent;
-                    let description = services[i].getElementsByTagName("description")[0].textContent;
+          for (let i = 0; i < services.length; i++) {
+            let name = services[i].getElementsByTagName("name")[0].textContent;
+            let category = services[i].getElementsByTagName("category")[0].textContent;
+            let description = services[i].getElementsByTagName("description")[0].textContent;
 
-                    // Dynamically fetch details (skills, platforms, tools, etc.)
-                    let details = "";
-                    let detailTags = ["skills", "platforms", "tools", "degreeTypes", "locations", "types"];
-                    detailTags.forEach(tag => {
-                        let detailElements = services[i].getElementsByTagName(tag);
-                        if (detailElements.length > 0) {
-                            let items = detailElements[0].children;
-                            details += `<strong>${tag.replace(/([A-Z])/g, ' $1')}:</strong> `;
-                            for (let j = 0; j < items.length; j++) {
-                                details += items[j].textContent + (j < items.length - 1 ? ", " : "");
-                            }
-                            details += "<br>";
-                        }
-                    });
+            // Dynamically fetch details (skills, platforms, tools, etc.)
+            let details = "";
+            let detailTags = ["skills", "platforms", "tools", "degreeTypes", "locations", "types"];
+            detailTags.forEach(tag => {
+              let detailElements = services[i].getElementsByTagName(tag);
+              if (detailElements.length > 0) {
+                let items = detailElements[0].children;
+                details += `<strong>${tag.replace(/([A-Z])/g, ' $1')}:</strong> `;
+                for (let j = 0; j < items.length; j++) {
+                  details += items[j].textContent + (j < items.length - 1 ? ", " : "");
+                }
+                details += "<br>";
+              }
+            });
 
-                    // Append row to table
-                    tableBody.innerHTML += `
+            // Append row to table
+            tableBody.innerHTML += `
                         <tr>
                             <td><strong>${name}</strong></td>
                             <td>${category}</td>
@@ -415,12 +388,82 @@
                             <td>${details}</td>
                         </tr>
                     `;
-                }
-            })
-            .catch(error => console.error("Error loading XML:", error));
+          }
+        })
+        .catch(error => console.error("Error loading XML:", error));
     });
+    $(document).ready(function () {
+      $("#myForm").submit(function (e) {
+        e.preventDefault(); // Prevent form submission
 
+        let isValid = true;
+
+        // Email validation
+        if ($("#inputEmail4").val().trim() == "") {
+          $("#emailError").show();
+          isValid = false;
+        } else {
+          $("#emailError").hide();
+        }
+
+        // Password validation
+        if ($("#inputPassword4").val().trim().length < 8) {
+          $("#passwordError").show();
+          isValid = false;
+        } else {
+          $("#passwordError").hide();
+        }
+
+        // Address validation
+        if ($("#inputAddress").val().trim() == "") {
+          $("#addressError").show();
+          isValid = false;
+        } else {
+          $("#addressError").hide();
+        }
+
+        // City validation
+        if ($("#inputCity").val().trim() == "") {
+          $("#cityError").show();
+          isValid = false;
+        } else {
+          $("#cityError").hide();
+        }
+
+        // State validation
+        if ($("#inputState").val() == "Choose...") {
+          $("#stateError").show();
+          isValid = false;
+        } else {
+          $("#stateError").hide();
+        }
+
+        // Zip validation
+        if ($("#inputZip").val().trim().length != 5 || isNaN($("#inputZip").val().trim())) {
+          $("#zipError").show();
+          isValid = false;
+        } else {
+          $("#zipError").hide();
+        }
+
+        // Terms validation
+        if (!$("#gridCheck").is(":checked")) {
+          $("#termsError").show();
+          isValid = false;
+        } else {
+          $("#termsError").hide();
+        }
+
+        // If all fields are valid, submit the form
+        if (isValid) {
+          alert("Form submitted successfully!");
+          window.location.href="/Web-Tech/sub.html ";
+          // You can add your form submission logic here
+        }
+      });
+    });
   </script>
+
 </body>
 
 </html>
