@@ -11,6 +11,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -149,7 +151,9 @@
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>The basic 5 factors behind the creation of all facilities.</strong> Hardware,Networks,servers,Cloud & Security which we can deal with it without fear of the place,time,and study of these 5 factors means IT administrator & Cyber Security Specialist
+                  <strong>The basic 5 factors behind the creation of all facilities.</strong>
+                  Hardware,Networks,servers,Cloud & Security which we can deal with it without fear of the
+                  place,time,and study of these 5 factors means IT administrator & Cyber Security Specialist
                 </div>
               </div>
             </div>
@@ -163,7 +167,9 @@
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>A full-stack web developer is a person who can develop both client and server software.</strong> in addition to mastering HTML and CSS,he/she also knows how to Program a browswe,Program a server,and Program a database.
+                  <strong>A full-stack web developer is a person who can develop both client and server
+                    software.</strong> in addition to mastering HTML and CSS,he/she also knows how to Program a
+                  browswe,Program a server,and Program a database.
                 </div>
               </div>
             </div>
@@ -177,7 +183,8 @@
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>GIM is a course that develpps the inner strength of our children considren.</strong>their efficientcy,and high potential of work skills and makes them IT industry redy which growing repidly.
+                  <strong>GIM is a course that develpps the inner strength of our children considren.</strong>their
+                  efficientcy,and high potential of work skills and makes them IT industry redy which growing repidly.
                 </div>
               </div>
             </div>
@@ -193,80 +200,30 @@
   </section>
 
   <!-- page number-3 -->
-  <section class="services py-5 bg-light" id="services">
-    <div class="container">
-      <div class=" text-center my-5">
-        <h1>Our<span class="text-primary"> Services</span></h1>
-        <hr class="w-25 m-auto">
-      </div>
+  <section class="services py-5 bg-light" id="services" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container mt-5">
+      <h1 class="text-center">Our<span class="text-primary"> Services</span></h1>
+      <hr class="w-25 m-auto"><br><br>
+        <div class="table-responsive" data-aos="fade-up" data-aos-delay="300">
+            <table class="table table-bordered table-hover table-striped text-center shadow-lg">
+                <thead class="bg-primary text-white" data-aos="fade-down" data-aos-delay="500">
+                    <tr class="fs-5">
+                        <th>Service</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody id="serviceTable" class="bg-white">
+                    <!-- Data will be loaded here -->
+                </tbody>
+            </table>
+        </div>
     </div>
+</section>
 
-    <div class="row px-5" data-aos="zoom-in-up" data-aos-offset="200">
-      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-        <div class="card">
-          <div class="card-body">
-            <i class="fa fa-users bg-primary p-2 text-white rounded"></i>
-            <h5 class="card-title">Web Development</h5>
-            <p class="card-text">Web development involves creating and maintaining websites and web applications. It encompasses a variety of tasks, from coding and designing to focus on the logic of displaying elements ensuring the performance focus  the logic of displaying elements and security of a website.</p>
-            <a href="#" class="btn btn-primary">7 Courses</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-        <div class="card bg-primary text-white">
-          <div class="card-body">
-            <i class="fa fa-code bg-white p-2 text-dark rounded mb-2"></i>
-            <h5 class="card-title">Application Development</h5>
-            <p class="card-text">Application development involves creating software applications that perform specific tasks for users. This process includes planning, designing, coding, testing, and maintaining applicationsfocus on the logic of displaying . Here are some key aspects of application development</p>
-            <a href="#" class="btn btn-primary">4 Courses</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-        <div class="card">
-          <div class="card-body">
-            <i class="fa fa-users bg-primary p-2 text-white rounded"></i>
-            <h5 class="card-title">Graphics Design</h5>
-            <p class="card-text">Graphic design is the art of creating visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users’ specific needs and focus on the logic of displaying elements in interac the user experience.</p>
-            <a href="#" class="btn btn-primary">8 Courses</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row px-5 mt-5" data-aos="zoom-in-down" data-aos-offset="200">
-      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-        <div class="card">
-          <div class="card-body">
-            <i class="fa fa-users bg-primary p-2 text-white rounded"></i>
-            <h5 class="card-title">Online Degree Programs</h5>
-            <p class="card-text">Online degree programs offer focus on the logic of displaying elements a flexible and convenient way to focus on the logic These programs can be domestic of displaying elements pursue higher education. Here are some of the top online bachelor’s degree programs for 2024</p>
-            <a href="#" class="btn btn-primary">5 Courses</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-        <div class="card bg-primary text-white">
-          <div class="card-body">
-            <i class="fa fa-code bg-white p-2 text-dark rounded mb-2"></i>
-            <h5 class="card-title">Off-Campus Programs</h5>
-            <p class="card-text">Off-campus programs provide students with opportunities to study, intern, or engage in experiential learning outside their main campus. These programs can be domestic or international and often include study abroad, internships, service learning, and other educational experiences.</p>
-            <a href="#" class="btn btn-primary">3 Courses</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-        <div class="card">
-          <div class="card-body">
-            <i class="fa fa-users bg-primary p-2 text-white rounded"></i>
-            <h5 class="card-title">Non-Degree Programs</h5>
-            <p class="card-text">Non-degree programs are educational options that allow you to take courses without pursuing a formal degree. These programs are designed for personal or professional growth and can be a great way to acquire new skills, enhance your knowledge, or explore new interests degree program</p>
-            <a href="#" class="btn btn-primary">9 Courses</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
+
+
   <!-- page number-4 -->
   <section class="Team my-5 text-center" id="team">
     <div class="container">
@@ -384,44 +341,85 @@
   </script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script>
-   // Form validation function
-function validateForm() {
-  // Get form values
-  var email = document.getElementById("inputEmail4").value;
-  var password = document.getElementById("inputPassword4").value;
-  var address = document.getElementById("inputAddress").value;
-  var city = document.getElementById("inputCity").value;
+    // Form validation function
+    function validateForm() {
+      // Get form values
+      var email = document.getElementById("inputEmail4").value;
+      var password = document.getElementById("inputPassword4").value;
+      var address = document.getElementById("inputAddress").value;
+      var city = document.getElementById("inputCity").value;
 
-  // Email validation
-  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-  if (!emailPattern.test(email)) {
-    alert("Please enter a valid email address.");
-    return false;
-  }
+      // Email validation
+      var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
 
-  // Password validation (at least 8 characters)
-  if (password.length < 8) {
-    alert("Password must be at least 8 characters long.");
-    return false;
-  }
+      // Password validation (at least 8 characters)
+      if (password.length < 8) {
+        alert("Password must be at least 8 characters long.");
+        return false;
+      }
 
-  // Address validation (should not be empty)
-  if (address.trim() === "") {
-    alert("Address cannot be empty.");
-    return false;
-  }
+      // Address validation (should not be empty)
+      if (address.trim() === "") {
+        alert("Address cannot be empty.");
+        return false;
+      }
 
-  // City validation (should not be empty)
-  if (city.trim() === "") {
-    alert("City cannot be empty.");
-    return false;
-  }
+      // City validation (should not be empty)
+      if (city.trim() === "") {
+        alert("City cannot be empty.");
+        return false;
+      }
 
-  // If all validations pass, form submission is allowed
-  return true;
-}
+      // If all validations pass, form submission is allowed
+      return true;
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("data.xml") // Fetch XML file
+            .then(response => response.text())
+            .then(data => {
+                let parser = new DOMParser();
+                let xml = parser.parseFromString(data, "application/xml");
+                let services = xml.getElementsByTagName("service");
+                let tableBody = document.getElementById("serviceTable");
 
-  
+                for (let i = 0; i < services.length; i++) {
+                    let name = services[i].getElementsByTagName("name")[0].textContent;
+                    let category = services[i].getElementsByTagName("category")[0].textContent;
+                    let description = services[i].getElementsByTagName("description")[0].textContent;
+
+                    // Dynamically fetch details (skills, platforms, tools, etc.)
+                    let details = "";
+                    let detailTags = ["skills", "platforms", "tools", "degreeTypes", "locations", "types"];
+                    detailTags.forEach(tag => {
+                        let detailElements = services[i].getElementsByTagName(tag);
+                        if (detailElements.length > 0) {
+                            let items = detailElements[0].children;
+                            details += `<strong>${tag.replace(/([A-Z])/g, ' $1')}:</strong> `;
+                            for (let j = 0; j < items.length; j++) {
+                                details += items[j].textContent + (j < items.length - 1 ? ", " : "");
+                            }
+                            details += "<br>";
+                        }
+                    });
+
+                    // Append row to table
+                    tableBody.innerHTML += `
+                        <tr>
+                            <td><strong>${name}</strong></td>
+                            <td>${category}</td>
+                            <td>${description}</td>
+                            <td>${details}</td>
+                        </tr>
+                    `;
+                }
+            })
+            .catch(error => console.error("Error loading XML:", error));
+    });
+
   </script>
 </body>
 

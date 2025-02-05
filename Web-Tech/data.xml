@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+    <service>
+        <id>1</id>
+        <name>Web Development</name>
+        <category>Technology</category>
+        <description>Web development involves creating and maintaining websites and web applications. It includes coding, designing, ensuring performance, security, and proper element display.</description>
+        <skills>
+            <skill>HTML</skill>
+            <skill>CSS</skill>
+            <skill>JavaScript</skill>
+            <skill>Bootstrap</skill>
+        </skills>
+    </service>
+    <service>
+        <id>2</id>
+        <name>Application Development</name>
+        <category>Technology</category>
+        <description>Application development involves creating software applications for specific user needs. It includes planning, designing, coding, testing, and maintaining applications.</description>
+        <platforms>
+            <platform>Android</platform>
+            <platform>iOS</platform>
+            <platform>Windows</platform>
+        </platforms>
+    </service>
+    <service>
+        <id>3</id>
+        <name>Graphic Design</name>
+        <category>Design</category>
+        <description>Graphic design is the art of creating visual content to communicate messages. Designers use typography, images, and layout techniques to enhance user experience.</description>
+        <tools>
+            <tool>Adobe Photoshop</tool>
+            <tool>Adobe Illustrator</tool>
+            <tool>Figma</tool>
+        </tools>
+    </service>
+    <service>
+        <id>4</id>
+        <name>Online Degree Programs</name>
+        <category>Education</category>
+        <description>Online degree programs offer a flexible and convenient way to pursue higher education. These programs are available in various disciplines and cater to different learning needs.</description>
+        <degreeTypes>
+            <degree>Bachelor’s</degree>
+            <degree>Master’s</degree>
+            <degree>Doctorate</degree>
+        </degreeTypes>
+    </service>
+    <service>
+        <id>5</id>
+        <name>Off-Campus Programs</name>
+        <category>Education</category>
+        <description>Off-campus programs provide students with opportunities to study, intern, or engage in experiential learning outside their main campus. These programs include study abroad, internships, and service learning.</description>
+        <locations>
+            <location>Domestic</location>
+            <location>International</location>
+        </locations>
+    </service>
+    <service>
+        <id>6</id>
+        <name>Non-Degree Programs</name>
+        <category>Education</category>
+        <description>Non-degree programs allow individuals to take courses without pursuing a formal degree. They help in personal and professional growth by enhancing skills and knowledge.</description>
+        <types>
+            <type>Certificate Programs</type>
+            <type>Workshops</type>
+            <type>Professional Training</type>
+        </types>
+    </service>
+</services>
