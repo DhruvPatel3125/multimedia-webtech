@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<college>
+    <sy>
+        <name>Dhruv</name>
+        <cource>Bca</cource>
+        <year>2025</year>
+    </sy>
+    <sy>
+        <name>Raj</name>
+        <cource>Bca</cource>
+        <year>2025</year>
+    </sy>
+    <sy>
+        <name>Meet</name>
+        <cource>Bca</cource>
+        <year>2025</year>
+    </sy>
+    <sy>
+        <name>Sujal</name>
+        <cource>Bca</cource>
+        <year>2025</year>
+    </sy>
+    <sy>
+        <name>Prem</name>
+        <cource>Bca</cource>
+        <year>2025</year>
+    </sy>
+    <sy>
+        <name>Prince</name>
+        <cource>Bca</cource>
+        <year>2025</year>
+    </sy>
+</college>
